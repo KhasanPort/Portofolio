@@ -1,0 +1,54 @@
+:root 
+{
+    --theme : white;
+    --mouse-x : 0px;
+    --mouse-y : 0px;
+}
+
+.mover 
+{
+    left: var(--mouse-x);
+    top: var(--mouse-y);
+}
+
+html 
+{
+    scroll-snap-type: y mandatory;
+}
+
+.special 
+{
+    background: linear-gradient(20deg, blue 1%, lightskyblue, lightgreen);
+    color: transparent !important;
+    text-shadow: 0 0 0 black;
+    -webkit-background-clip: text;
+}
+
+.active 
+{
+    transform: translate(0,0) !important;
+}
+
+/* .slide-y 
+{
+    block-size: 100vh;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.slide-y::-webkit-scrollbar 
+{
+    display: none;
+}
+
+.slide-x
+{
+    block-size: 100vh;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.slide-x::-webkit-scrollbar
+{
+    display: none;
+} */
